@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestingAPi">
+
+    <TextView
+        android:id="@+id/tv_tank_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tank Details"
+        android:textColor="#0277BD"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_tankid"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_tankid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tank ID"
+        android:inputType="number"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tank_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_cityid"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_cityid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="City ID"
+        android:inputType="number"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@+id/et_tankid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_cityname"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_cityname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="City Name"
+        android:inputType="text"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@+id/et_cityid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_tankname"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_tankname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tank Name"
+        android:inputType="text"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@+id/et_cityname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_description"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="text"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@+id/et_tankname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_statuscode"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_statuscode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Status Code"
+        android:inputType="number"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@+id/et_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_status"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Status"
+        android:inputType="text"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@+id/et_statuscode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_adduser"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_adduser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Add User"
+        android:inputType="number"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@+id/et_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_moduser"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_moduser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Mod User"
+        android:inputType="number"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@+id/et_adduser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_statementtype"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_statementtype"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Statement Type"
+        android:inputType="text"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@+id/et_moduser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_fetch_data"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/btn_fetch_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetch Data"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/et_statementtype"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

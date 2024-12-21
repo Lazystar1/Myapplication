@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#66CEC8"
+            android:text="Integrated Water Distribution"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#66CEC8"
+            android:text="Management System"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="374dp"
+        android:layout_height="153dp"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/signup_banner" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="SignUp"
+        android:textColor="#0277BD"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:hint="Name"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/errorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:text="Name is required"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:hint="Username"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@id/errorName"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/errorUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:text="Username is required"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:hint="Email"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@id/errorUsername"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/errorEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:text="Email is required"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:hint="Phone Number"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@id/errorEmail"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/errorPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:text="Phone Number is required"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:hint="City"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@id/errorPhone"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/errorCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCity"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:text="City is required"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:hint="Password"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@id/errorCity"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/errorPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:text="Password is required"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/errorPassword"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:text="Signup"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>

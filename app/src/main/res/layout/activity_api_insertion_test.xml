@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Api_insertion_test">
+    <EditText
+        android:id="@+id/et_overheadtankid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Overhead Tank ID"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_cityid"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_cityid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="City ID"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/et_overheadtankid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_tankid"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_tankid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tank ID"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/et_cityid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_connectiontype"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_connectiontype"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Connection Type"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/et_tankid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_demand"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_demand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Demand"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/et_connectiontype"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_taptype"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_taptype"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tap Type"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/et_demand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_valveopentime"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_valveopentime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Valve Open Time"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/et_taptype"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_valveclosetime"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_valveclosetime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Valve Close Time"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/et_valveopentime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_avgconsumption"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_avgconsumption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Avg Consumption"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/et_valveclosetime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_description"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/et_avgconsumption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_statementtype"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/et_statementtype"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Statement Type"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/et_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert Data"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/et_statementtype"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IWDMS</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="spinner_numbers">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+
+    </string-array>
+
+
+    <string-array name="spinner_codes">
+        <item>Select</item>
+        <item>CODE001</item>
+        <item>CODE002</item>
+        <item>CODE003</item>
+        <item>CODE004</item>
+        <item>CODE005</item>
+
+    </string-array>
+
+    <string-array name="spinner_names">
+        <item>Select</item>
+        <item>Amit</item>
+        <item>Sita</item>
+        <item>Ravi</item>
+        <item>Anita</item>
+        <item>Rajesh</item>
+
+    </string-array>
+
+    <string-array name="spinner_alerts">
+        <item>Select</item>
+        <item>Leak Detected</item>
+        <item>Critical valve</item>
+        <item>Failure</item>
+        <item>Busted</item>
+    </string-array>
+
+    <string name="camera_description">
+        Click Here to open camera
+    </string>
+
+</resources>

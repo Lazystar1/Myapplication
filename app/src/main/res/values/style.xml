@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.NavigationPage" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">#87CEEB</item> <!-- Blue -->
+        <item name="colorPrimaryVariant">#01579B</item> <!-- Dark Blue -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White -->
+        <item name="colorSecondary">#C2185B</item> <!-- Pink -->
+        <item name="colorSecondaryVariant">#D81B60</item> <!-- Dark Pink -->
+        <item name="colorOnSecondary">#FFFFFF</item> <!-- White -->
+
+        <!-- Apply custom EditText style for light mode -->
+
+    </style>
+
+
+    <style name="MenuItemTextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@string/fab_transformation_scrim_behavior</item> <!-- Example font -->
+    </style>
+    <!-- Dark mode theme -->
+    <style name="Theme.NavigationPage.Night" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Dark mode colors -->
+        <item name="colorPrimary">#121212</item> <!-- Darker shade for primary color -->
+        <item name="colorPrimaryVariant">#3700B3</item> <!-- Darker variant of blue -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White -->
+        <item name="colorSecondary">#BB86FC</item> <!-- Lighter shade for secondary color -->
+        <item name="colorSecondaryVariant">#03DAC6</item> <!-- Lighter variant for dark mode -->
+        <item name="colorOnSecondary">#000000</item> <!-- Black for contrast -->
+
+        <!-- Apply custom EditText style for dark mode -->
+
+    </style>
+
+    <style name="CustomDialog" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogSpotColor">@color/colorPrimary</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
+
+</resources>
